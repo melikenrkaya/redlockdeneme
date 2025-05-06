@@ -1,0 +1,207 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Melikenur Kaya\\source\\repos\\RedlockDeneme\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{58348707-2AA1-476C-A0D2-E8B3EE9C7740}|RedlockDeneme.csproj|c:\\users\\melikenur kaya\\source\\repos\\redlockdeneme\\services\\stokservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{58348707-2AA1-476C-A0D2-E8B3EE9C7740}|RedlockDeneme.csproj|solutionrelative:services\\stokservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{58348707-2AA1-476C-A0D2-E8B3EE9C7740}|RedlockDeneme.csproj|c:\\users\\melikenur kaya\\source\\repos\\redlockdeneme\\controller\\stokcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{58348707-2AA1-476C-A0D2-E8B3EE9C7740}|RedlockDeneme.csproj|solutionrelative:controller\\stokcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{58348707-2AA1-476C-A0D2-E8B3EE9C7740}|RedlockDeneme.csproj|c:\\users\\melikenur kaya\\source\\repos\\redlockdeneme\\services\\istok.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{58348707-2AA1-476C-A0D2-E8B3EE9C7740}|RedlockDeneme.csproj|solutionrelative:services\\istok.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{58348707-2AA1-476C-A0D2-E8B3EE9C7740}|RedlockDeneme.csproj|c:\\users\\melikenur kaya\\source\\repos\\redlockdeneme\\data\\entity\\stok.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{58348707-2AA1-476C-A0D2-E8B3EE9C7740}|RedlockDeneme.csproj|solutionrelative:data\\entity\\stok.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{58348707-2AA1-476C-A0D2-E8B3EE9C7740}|RedlockDeneme.csproj|c:\\users\\melikenur kaya\\source\\repos\\redlockdeneme\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{58348707-2AA1-476C-A0D2-E8B3EE9C7740}|RedlockDeneme.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{58348707-2AA1-476C-A0D2-E8B3EE9C7740}|RedlockDeneme.csproj|c:\\users\\melikenur kaya\\source\\repos\\redlockdeneme\\common\\extensions\\stokexten.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{58348707-2AA1-476C-A0D2-E8B3EE9C7740}|RedlockDeneme.csproj|solutionrelative:common\\extensions\\stokexten.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{58348707-2AA1-476C-A0D2-E8B3EE9C7740}|RedlockDeneme.csproj|c:\\users\\melikenur kaya\\source\\repos\\redlockdeneme\\data\\models\\stokdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{58348707-2AA1-476C-A0D2-E8B3EE9C7740}|RedlockDeneme.csproj|solutionrelative:data\\models\\stokdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{58348707-2AA1-476C-A0D2-E8B3EE9C7740}|RedlockDeneme.csproj|c:\\users\\melikenur kaya\\source\\repos\\redlockdeneme\\data\\context\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{58348707-2AA1-476C-A0D2-E8B3EE9C7740}|RedlockDeneme.csproj|solutionrelative:data\\context\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{58348707-2AA1-476C-A0D2-E8B3EE9C7740}|RedlockDeneme.csproj|c:\\users\\melikenur kaya\\source\\repos\\redlockdeneme\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{58348707-2AA1-476C-A0D2-E8B3EE9C7740}|RedlockDeneme.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 11,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "IStok.cs",
+              "DocumentMoniker": "C:\\Users\\Melikenur Kaya\\source\\repos\\RedlockDeneme\\Services\\IStok.cs",
+              "RelativeDocumentMoniker": "Services\\IStok.cs",
+              "ToolTip": "C:\\Users\\Melikenur Kaya\\source\\repos\\RedlockDeneme\\Services\\IStok.cs",
+              "RelativeToolTip": "Services\\IStok.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-02T16:14:50.097Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Stok.cs",
+              "DocumentMoniker": "C:\\Users\\Melikenur Kaya\\source\\repos\\RedlockDeneme\\Data\\Entity\\Stok.cs",
+              "RelativeDocumentMoniker": "Data\\Entity\\Stok.cs",
+              "ToolTip": "C:\\Users\\Melikenur Kaya\\source\\repos\\RedlockDeneme\\Data\\Entity\\Stok.cs",
+              "RelativeToolTip": "Data\\Entity\\Stok.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-02T16:00:28.41Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Melikenur Kaya\\source\\repos\\RedlockDeneme\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\Users\\Melikenur Kaya\\source\\repos\\RedlockDeneme\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-05-02T13:48:00.297Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Melikenur Kaya\\source\\repos\\RedlockDeneme\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\Melikenur Kaya\\source\\repos\\RedlockDeneme\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAADMAAAAAAAAAAAAgwEMAAAA+AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-02T13:47:30.448Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ApplicationDBContext.cs",
+              "DocumentMoniker": "C:\\Users\\Melikenur Kaya\\source\\repos\\RedlockDeneme\\Data\\Context\\ApplicationDBContext.cs",
+              "RelativeDocumentMoniker": "Data\\Context\\ApplicationDBContext.cs",
+              "ToolTip": "C:\\Users\\Melikenur Kaya\\source\\repos\\RedlockDeneme\\Data\\Context\\ApplicationDBContext.cs",
+              "RelativeToolTip": "Data\\Context\\ApplicationDBContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-02T13:46:40.35Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "StokServices.cs",
+              "DocumentMoniker": "C:\\Users\\Melikenur Kaya\\source\\repos\\RedlockDeneme\\Services\\StokServices.cs",
+              "RelativeDocumentMoniker": "Services\\StokServices.cs",
+              "ToolTip": "C:\\Users\\Melikenur Kaya\\source\\repos\\RedlockDeneme\\Services\\StokServices.cs",
+              "RelativeToolTip": "Services\\StokServices.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAYwBoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-02T13:46:15.615Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "StokController.cs",
+              "DocumentMoniker": "C:\\Users\\Melikenur Kaya\\source\\repos\\RedlockDeneme\\Controller\\StokController.cs",
+              "RelativeDocumentMoniker": "Controller\\StokController.cs",
+              "ToolTip": "C:\\Users\\Melikenur Kaya\\source\\repos\\RedlockDeneme\\Controller\\StokController.cs",
+              "RelativeToolTip": "Controller\\StokController.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAAAAACgAAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-02T13:13:16.574Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "StokDTO.cs",
+              "DocumentMoniker": "C:\\Users\\Melikenur Kaya\\source\\repos\\RedlockDeneme\\Data\\Models\\StokDTO.cs",
+              "RelativeDocumentMoniker": "Data\\Models\\StokDTO.cs",
+              "ToolTip": "C:\\Users\\Melikenur Kaya\\source\\repos\\RedlockDeneme\\Data\\Models\\StokDTO.cs",
+              "RelativeToolTip": "Data\\Models\\StokDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAgAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-02T13:13:09.787Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "StokExten.cs",
+              "DocumentMoniker": "C:\\Users\\Melikenur Kaya\\source\\repos\\RedlockDeneme\\Common\\Extensions\\StokExten.cs",
+              "RelativeDocumentMoniker": "Common\\Extensions\\StokExten.cs",
+              "ToolTip": "C:\\Users\\Melikenur Kaya\\source\\repos\\RedlockDeneme\\Common\\Extensions\\StokExten.cs",
+              "RelativeToolTip": "Common\\Extensions\\StokExten.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABEAAABXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-02T13:12:47.48Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 29,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0174dea2-fdbe-4ef1-8f99-c0beae78880f}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

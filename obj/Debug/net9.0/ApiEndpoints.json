@@ -1,0 +1,102 @@
+[
+  {
+    "ContainingType": "RedlockDeneme.Controller.StokController",
+    "Method": "GetALL",
+    "RelativePath": "Api/Stok",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RedlockDeneme.Controller.StokController",
+    "Method": "Create",
+    "RelativePath": "Api/Stok",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "stokDto",
+        "Type": "RedlockDeneme.Data.Models.CreateStokRequestDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RedlockDeneme.Controller.StokController",
+    "Method": "GetById",
+    "RelativePath": "Api/Stok/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RedlockDeneme.Controller.StokController",
+    "Method": "Update",
+    "RelativePath": "Api/Stok/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "updatestokDto",
+        "Type": "RedlockDeneme.Data.Models.UpdateStokRequestDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RedlockDeneme.Controller.StokController",
+    "Method": "Delete",
+    "RelativePath": "Api/Stok/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RedlockDeneme.Controller.StokController",
+    "Method": "SiparisVer",
+    "RelativePath": "Api/Stok/siparis/{stokId}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "stokId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "ad",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  }
+]
