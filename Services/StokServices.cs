@@ -20,30 +20,51 @@ namespace RedlockDeneme.Services
             _redisDb = redisDb;
             _lockFactory = lockFactory;
         }
-        //  RedLock ile güvenli sipariş işlemi
-        public async Task<string> SiparisVerAsync(int stokId, string stokAdi)
+public async Task<string> SiparisVerAsync(int stokId, string stokAdi)
         {
             string lockKey = $"lock:stok:{stokId}";
 
             using (var redLock = await _lockFactory.CreateLockAsync(lockKey, TimeSpan.FromSeconds(10)))
             {
                 if (!redLock.IsAcquired)
-                    return $"{stokAdi} -  Kilit alınamadı.";
+                    return $"{stokAdi} - Kilit alınamadı.";
+                Console.WriteLine($"lockkey: {lockKey}");
+   
+                var cacheKey = $"stok:{stokId}";
+                Stok? stok = null;
 
-                var stok = await _context.Stoks
-      .FirstOrDefaultAsync(s => s.StokId == stokId && s.StokAdi == stokAdi);
+                if (await _redisDb.KeyExistsAsync(cacheKey))
+                {
+                    var cachedValue = await _redisDb.StringGetAsync(cacheKey);
+                    stok = JsonSerializer.Deserialize<Stok>(cachedValue);
+                    Console.WriteLine($"cacheKey: {cacheKey}");
+                    Console.WriteLine($"cachedValue: {cachedValue}");
+                }
+                else
+                {
+                    stok = await _context.Stoks.FirstOrDefaultAsync(s => s.StokId == stokId && s.StokAdi == stokAdi);
+                    if (stok != null)
+                    {
+                        await _redisDb.StringSetAsync(cacheKey, JsonSerializer.Serialize(stok));
+                    }
+                }
                 if (stok == null)
-                    return $"{stokAdi} - Ürün bulunamadı veya adı bulunamadı";
+                    return $"{stokAdi} - Ürün bulunamadı.";
 
                 if (stok.StokSayisi <= 0)
-                    return $"{stokAdi} -  Stok kalmadı.";
+                    return $"{stokAdi} - Stok kalmadı.";
 
-                stok.StokSayisi--;
+                var stokFromDb = await _context.Stoks.FirstOrDefaultAsync(s => s.StokId == stokId);
+                if (stokFromDb == null || stokFromDb.StokSayisi <= 0)
+                    return $"{stokAdi} - Stok kalmadı.";
+
+                stokFromDb.StokSayisi--;
                 await _context.SaveChangesAsync();
 
-                await _redisDb.StringSetAsync($"stok:{stokId}", JsonSerializer.Serialize(stok));
+                stok.StokSayisi = stokFromDb.StokSayisi;
+                await _redisDb.StringSetAsync(cacheKey, JsonSerializer.Serialize(stok));
 
-                return $"{stokAdi} -  {stok.StokAdi} alındı. Kalan: {stok.StokSayisi}";
+                return $"{stokAdi} - Sipariş alındı. Kalan stok: {stok.StokSayisi}";
             }
         }
         public async Task<List<Stok>> GetAllAsync()
