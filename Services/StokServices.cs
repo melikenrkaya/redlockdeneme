@@ -70,20 +70,11 @@ namespace RedlockDeneme.Services
                 stokFromDb.StokSayisi -= quantity;
                 await _context.SaveChangesAsync();
 
-                // Redis güncelleme
-                stok.StokSayisi = stokFromDb.StokSayisi;
-                await _redisDb.StringSetAsync(cacheKey, JsonSerializer.Serialize(stok));
-                
-                if (stok.StokSayisi == 0)
-                {
-                    await _sepetServices.SepetiTemizleAsync(stokId);
+                await _redisDb.StringSetAsync($"stok:{stokId}", JsonSerializer.Serialize(stok));
 
-                }
-
-                return $"{stokAdi} - {quantity} adet sipariş alındı. Kalan stok: {stok.StokSayisi}";
+                return $"{stokAdi} -  {stok.StokAdi} alındı. Kalan: {stok.StokSayisi}";
             }
         }
-
         public async Task<List<Stok>> GetAllAsync()
         {
             return await _context.Stoks.ToListAsync();
