@@ -5,6 +5,122 @@
     "version": "v1"
   },
   "paths": {
+    "/Api/Sepet": {
+      "get": {
+        "tags": [
+          "Sepet"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Sepet"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateSepetRequestDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateSepetRequestDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateSepetRequestDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/Api/Sepet/{id}": {
+      "get": {
+        "tags": [
+          "Sepet"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Sepet"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateSepetRequestDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateSepetRequestDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateSepetRequestDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/Api/Sepet/temizle/stogu-bitmis": {
+      "delete": {
+        "tags": [
+          "Sepet"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/Api/Stok": {
       "get": {
         "tags": [
@@ -151,6 +267,14 @@
             "schema": {
               "type": "string"
             }
+          },
+          {
+            "name": "quantity",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
           }
         ],
         "responses": {
@@ -163,6 +287,24 @@
   },
   "components": {
     "schemas": {
+      "CreateSepetRequestDTO": {
+        "type": "object",
+        "properties": {
+          "urunId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "urunAdi": {
+            "type": "string",
+            "nullable": true
+          },
+          "adet": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
       "CreateStokRequestDto": {
         "type": "object",
         "properties": {
@@ -171,6 +313,24 @@
             "nullable": true
           },
           "stokSayisi": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
+      "UpdateSepetRequestDTO": {
+        "type": "object",
+        "properties": {
+          "urunId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "urunAdi": {
+            "type": "string",
+            "nullable": true
+          },
+          "adet": {
             "type": "integer",
             "format": "int32"
           }

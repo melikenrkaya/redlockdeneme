@@ -1,5 +1,78 @@
 [
   {
+    "ContainingType": "RedlockDeneme.Controller.SepetController",
+    "Method": "GetALL",
+    "RelativePath": "Api/Sepet",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RedlockDeneme.Controller.SepetController",
+    "Method": "Create",
+    "RelativePath": "Api/Sepet",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "sepetDto",
+        "Type": "RedlockDeneme.Data.Models.CreateSepetRequestDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RedlockDeneme.Controller.SepetController",
+    "Method": "GetById",
+    "RelativePath": "Api/Sepet/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RedlockDeneme.Controller.SepetController",
+    "Method": "Update",
+    "RelativePath": "Api/Sepet/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "updatesepetDto",
+        "Type": "RedlockDeneme.Data.Models.UpdateSepetRequestDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RedlockDeneme.Controller.SepetController",
+    "Method": "TemizleStoguBitmis",
+    "RelativePath": "Api/Sepet/temizle/stogu-bitmis",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "RedlockDeneme.Controller.StokController",
     "Method": "GetALL",
     "RelativePath": "Api/Stok",
@@ -94,6 +167,11 @@
       {
         "Name": "ad",
         "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "quantity",
+        "Type": "System.Int32",
         "IsRequired": false
       }
     ],

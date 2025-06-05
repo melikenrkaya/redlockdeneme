@@ -6,12 +6,14 @@ using RedLockNet;
 using RedLockNet.SERedis;
 using RedLockNet.SERedis.Configuration;
 using StackExchange.Redis;
+using System.Net.Security;
+using System.Security.Cryptography.X509Certificates;
 
 namespace RedblockDeneme
 {
     public class Program
     {
-        public static void Main(string[] args)
+        public static async Task Main(string[] args)
         {
             var builder = WebApplication.CreateBuilder(args);
 
@@ -60,12 +62,9 @@ namespace RedblockDeneme
     });
             });
 
-
-
-
-
-
             builder.Services.AddScoped<IStok, StokServices>();
+            builder.Services.AddScoped<ISepet, SepetServices>();
+
             //builder.Services.AddRazorPages();
 
             var app = builder.Build();
@@ -94,7 +93,6 @@ namespace RedblockDeneme
             app.UseAuthorization();
 
             app.MapControllers();
-
             app.Run();
         }
     }

@@ -4,6 +4,7 @@
     {
         public int StokId { get; set; }
         public string StokAdi { get; set; } = string.Empty;
-        public int StokSayisi { get; set; } 
+        public int StokSayisi { get; set; }
+
     }
 }

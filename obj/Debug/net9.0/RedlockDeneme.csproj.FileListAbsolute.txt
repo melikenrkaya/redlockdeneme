@@ -238,4 +238,5 @@ C:\Users\Melikenur Kaya\source\repos\RedlockDeneme\bin\Debug\net9.0\Pipelines.So
 C:\Users\Melikenur Kaya\source\repos\RedlockDeneme\bin\Debug\net9.0\RedLockNet.Abstractions.dll
 C:\Users\Melikenur Kaya\source\repos\RedlockDeneme\bin\Debug\net9.0\RedLockNet.SERedis.dll
 C:\Users\Melikenur Kaya\source\repos\RedlockDeneme\bin\Debug\net9.0\StackExchange.Redis.dll
+C:\Users\Melikenur Kaya\source\repos\redlockdeneme\obj\Debug\net9.0\RedlockDeneme.sourcelink.json
 C:\Users\Melikenur Kaya\source\repos\redlockdeneme\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt

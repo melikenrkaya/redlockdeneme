@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("RedlockDeneme")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3e7254e8737b74c4f342db2b01271a3ca3d94eb5")]
 [assembly: System.Reflection.AssemblyProductAttribute("RedlockDeneme")]
 [assembly: System.Reflection.AssemblyTitleAttribute("RedlockDeneme")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

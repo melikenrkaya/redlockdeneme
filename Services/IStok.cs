@@ -9,8 +9,8 @@ namespace RedlockDeneme.Services
         Task<Stok?> GetByIdAsync(int id);
         Task<Stok?> CreateAsync(Stok StokModel);
         Task<Stok?> UpdateAsync(int id, UpdateStokRequestDto StokDto);
-        Task<Stok?> DeleteAsync(int id);
-        Task<string?> SiparisVerAsync(int stokId, string kullaniciAdi);
+        Task DeleteAsync(int id);
+        Task<string?> SiparisVerAsync(int stokId, string stokAdi, int quantity);
 
     }
 }

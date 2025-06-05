@@ -45,11 +45,11 @@ namespace RedlockDeneme.Controller
             }
             return Ok(stok.ToStokDto());
         }
-        // POST: api/stok/siparis/5?ad=melike
+  
         [HttpPost("siparis/{stokId}")]
-        public async Task<IActionResult> SiparisVer(int stokId, [FromQuery] string ad)
+        public async Task<IActionResult> SiparisVer(int stokId, [FromQuery] string ad, int quantity)
         {
-            var sonuc = await _stokServices.SiparisVerAsync(stokId, ad);
+            var sonuc = await _stokServices.SiparisVerAsync(stokId, ad,  quantity);
             return Ok(new { mesaj = sonuc });
         }
 
@@ -89,7 +89,7 @@ namespace RedlockDeneme.Controller
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
 
-            var stokModel = await _stokServices.DeleteAsync(id);
+            var stokModel =  _stokServices.DeleteAsync(id);
             if (stokModel == null)
             {
                 return NotFound();
