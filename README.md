@@ -1,6 +1,6 @@
 # RedlockDeneme
 
-Bu proje, birden fazla istemcinin aynı stok ya da sepet verisini şuursuzca değiştirmesini engellemek amacıyla Redis tabanlı **dağıtık kilitleme (Distributed Locking)** sistemi olan **RedLock** algoritmasını uygulayan bir .NET backend uygulamasıdır.
+Bu proje, birden fazla istemcinin aynı stok ya da sepet veri değişimini engellemek amacıyla Redis tabanlı **dağıtık kilitleme (Distributed Locking)** sistemi olan **RedLock** algoritmasını uygulayan bir .NET backend uygulamasıdır.
 
 ---
 
@@ -82,11 +82,6 @@ https://localhost:{PORT}/swagger
 * RedLock, Redis üzerinde atomic lock mekanizması kurar.
 * Uygulama thread-safe ve çok kullanıcılı ortamlara uygundur.
 
----
-
-## 📅 Katkıda Bulunmak
-
-Proje gelişime açıktır. Pull request ve issue açabilirsiniz.
 
 ---
 
